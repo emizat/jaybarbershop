@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Welcome to Jay barbershop, where we blend contemporary style with expert craftmanship. We are dedicated to delivering precision haircuts and grooming services that leaves you looking and feeling your best. Step into our shop and experience the perfect blend of style and skill."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mr+Dafoe&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/favicon-brw.jpg" />
+    <link rel="apple-touch-icon" href="img/favicon-apple-jj.jpg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
+
+    <title>JayBarbershop &mdash; Home</title>
+  </head>
+  <body>
+    <!-- main header start -->
+    <header class="header">
+      <div class="logo-box">
+        <a href="#">
+          <img src="img/logo.jpeg" alt="Jay Logo" class="logo" />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#" class="header__nav-link">home</a></li>
+          <li><a href="about.html" class="header__nav-link">about us</a></li>
+          <li>
+            <a href="#" class="header__nav-link services-link">services</a>
+          </li>
+          <li><a href="#" class="header__nav-link contact-link">contact</a></li>
+          <li>
+            <a href="#popup" class="btn btn__main header__nav-btn">book now</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__mobile--nav" aria-label="open navigation">
+        <svg class="header__mobile--icon header__mobile--icon-menu">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="header__mobile--icon header__mobile--icon-cross">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </header>
+    <!-- main header end -->
+
+    <!-- main content start -->
+    <main class="main">
+      <!-- hero section start -->
+      <header class="hero" id="hero">
+        <!-- text box start -->
+        <div class="hero__text-box">
+          <h1 class="heading--primary mg--btm-big">
+            <svg class="heading--icon">
+              <use xlink:href="img/sprite.svg#icon-scissors"></use>
+            </svg>
+            Fresh cuts barbershop: where style meets precision
+          </h1>
+          <p class="hero__text">
+            Welcome to <strong>Jay barbershop</strong>, where we blend
+            contemporary style with expert craftmanship. We are dedicated to
+            delivering precision haircuts and grooming services that leaves you
+            looking and feeling your best. Step into our shop and experience the
+            perfect blend of style and skill.
+          </p>
+          <a href="#popup" class="btn btn__main hero__btn"
+            >experience the art of barbing</a
+          >
+        </div>
+        <!-- text box end -->
+        <!-- ******************************** -->
+        <!-- img box start -->
+        <div class="hero__img-box">
+          <!-- slider start -->
+          <div class="slider">
+            <div class="slider__slide slider__slide-1"></div>
+            <div class="slider__slide slider__slide-2"></div>
+            <div class="slider__slide slider__slide-4"></div>
+            <div class="slider__slide slider__slide-3"></div>
+
+            <svg class="slider__btn slider__btn-left">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+            <svg class="slider__btn slider__btn-right">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+            <div class="dots"></div>
+          </div>
+          <!-- slider end -->
+        </div>
+        <!-- image box end -->
+      </header>
+      <!-- hero section end -->
+      <!-- about us start -->
+      <section class="section about">
+        <div class="about__grid grid grid--2-cols container">
+          <!-- about text box start -->
+          <div class="about__text--box">
+            <h2 class="heading--secondary mg--btm-med">About JayBarbershop</h2>
+            <p class="about__text mg--btm-tiny">
+              Welcome to <strong>JayBarbershop</strong>, where tradition meets
+              modern grooming. Founded with a passion for precision and style,
+              our team of skilled barbers is dedicated to providing you with
+              exceptional service in a welcoming atmosphere.
+            </p>
+            <p class="about__text">
+              With years of experience and a commitment to excellence, we are
+              here to help you look and feel your best. Visit us today and
+              experience the difference at JayBarbershop.
+            </p>
+            <a href="about.html" class="btn about__btn">read more &rarr;</a>
+          </div>
+          <!-- about text box end -->
+          <!-- about img box start -->
+          <div class="about__img--box">
+            <figure>
+              <img
+                src="img/Barber-2.jpg"
+                alt="Jay barber and customer"
+                class="about__img"
+              />
+            </figure>
+          </div>
+          <!-- about img box end -->
+        </div>
+      </section>
+      <!-- about us end -->
+      <!-- services start -->
+      <section class="section services">
+        <div class="services__heading">
+          <h2 class="heading--secondary center-txt">why choose us?</h2>
+        </div>
+        <div class="tab">
+          <div class="tab__btn--container">
+            <!-- tab buttons -->
+            <button class="tab__btn tab__btn--1 tab__btn--active" data-tab="1">
+              skilled barbers</button
+            ><button class="tab__btn tab__btn--2" data-tab="2">
+              quality services</button
+            ><button class="tab__btn tab__btn--3" data-tab="3">
+              comfortable atmosphere
+            </button>
+            <button class="tab__btn tab__btn--4" data-tab="4">
+              modern techniques
+            </button>
+          </div>
+          <!-- tab content -->
+          <div class="tab__content tab__content--1 tab__content--active">
+            <figure class="tab__img--box">
+              <img
+                src="img/tab-1.jpg"
+                alt="Jay barbing a customer"
+                class="tab__img"
+              />
+            </figure>
+            <div class="tab__text--box">
+              <h3 class="tab__title">skilled barbers</h3>
+              <p class="tab__text">
+                Our team of experienced barbers are masters of their craft,
+                trained to deliver precision haircuts for men, women and
+                children, from classic styles to contemporary cuts, they will
+                ensure you leave our shop looking and feeling confident.
+              </p>
+            </div>
+          </div>
+          <div class="tab__content tab__content--2">
+            <figure class="tab__img--box">
+              <img
+                src="img/tab-2.jpg"
+                alt="Jay barbing a customer"
+                class="tab__img"
+              />
+            </figure>
+            <div class="tab__text--box">
+              <h3 class="tab__title">quality services</h3>
+              <p class="tab__text">
+                From the moment you walk in, you will be greeted with a warm
+                welcome and attentive service. We take the time to listen to
+                your needs, offering personalized consultations to understand
+                your desired look and provide expert advice on the best haircut
+                and grooming solutions for you.
+              </p>
+            </div>
+          </div>
+          <div class="tab__content tab__content--3">
+            <figure class="tab__img--box">
+              <img
+                src="img/tab-3.jpg"
+                alt="Jay barbing a customer"
+                class="tab__img"
+              />
+            </figure>
+            <div class="tab__text--box">
+              <h3 class="tab__title">comfortable atmosphere</h3>
+              <p class="tab__text">
+                Sit back, relax and enjoy the experience in our stylish and
+                inviting barbershop. With comfortable seating, soothing music
+                and a friendly atmosphere, you will feel right at home from the
+                moment you step through the door.
+              </p>
+            </div>
+          </div>
+          <div class="tab__content tab__content--4">
+            <figure class="tab__img--box">
+              <img
+                src="img/tab-4.jpg"
+                alt="Jay barbing a customer"
+                class="tab__img"
+              />
+            </figure>
+            <div class="tab__text--box">
+              <h3 class="tab__title">modern techniques</h3>
+              <p class="tab__text">
+                We stay ahead of the latest trends and techniques to ensure you
+                always leave our shop looking and feeling your best. Whether you
+                are after a classic cut or a bold new style, we've got you
+                covered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services end -->
+      <!-- contact us start -->
+      <section class="section contact">
+        <div class="contact__heading center-txt">
+          <h2 class="heading--secondary">reach out! contact us today!</h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__address--box">
+            <p class="contact__text">
+              Ready to experience the <strong>JayBarbershop</strong> difference?
+              Book your appointment online or give us a call, Walk-ins are also
+              welcomed. Come see why we are the go-to destination for quality
+              haircuts and grooming services.
+            </p>
+            <div class="contact__info">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <p class="contact__address">
+                No 7, Custom Line, Federal Housing Estate, Calabar
+              </p>
+            </div>
+            <div class="contact__info">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+              <a
+                href="mailto:jaybaber.io"
+                class="contact__link contact__link--mail"
+              >
+                jaybarber@gmail.com
+              </a>
+            </div>
+            <div class="contact__info">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              <a
+                href="tel:07065742419"
+                class="contact__link contact__link--call"
+                >07065742419</a
+              >
+            </div>
+          </div>
+          <div class="contact__form--box">
+            <h3 class="contact__form--title">message us</h3>
+            <form name="jaybarber-bookings" netlify class="contact__form">
+              <div class="contact__form--group">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  class="contact__form--input contact__form--input-text"
+                  placeholder="first name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  class="contact__form--input contact__form--input-text"
+                  placeholder="last name"
+                  required
+                />
+              </div>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact__form--input contact__form--input-email"
+                placeholder="email"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                class="contact__form--input contact__form--input-textarea"
+                placeholder="message"
+                required
+              ></textarea>
+              <button class="contact__form--btn">send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- contact us end -->
+    </main>
+    <!-- main content end -->
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__links">
+          <li>
+            <a
+              href="https://www.instagram.com/innohandsome_jj?igsh=MTUwa3RlN2ZoM2Q1Zw%3D%3D&utm_source=qr"
+              class="footer__link"
+              aria-label="our Instagram handle"
+            >
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100063634220872&mibextid=LQQJ4d"
+              class="footer__link"
+              aria-label="our facebook handle"
+            >
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link" aria-label="our twitter/X handle">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-x"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/message/BBHBJAAWGR4DJ1" class="footer__link">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          Copyright &copy; <span class="year">2050</span> JayBarbershop ltd.
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- popup form start -->
+    <div class="popup overlay" id="popup">
+      <div class="popup__content">
+        <a href="#hero">
+          <svg class="popup__close--btn">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </a>
+        <h2 class="heading--secondary mg--btm-big center-txt">
+          send us a message
+        </h2>
+        <form
+          name="jaybarber-bookings"
+          netlify
+          class="contact__form popup__form"
+        >
+          <div class="contact__form--group">
+            <input
+              type="text"
+              name="first-name"
+              id="popup--first-name"
+              class="contact__form--input contact__form--input-text"
+              placeholder="first name"
+              required
+            />
+            <input
+              type="text"
+              name="last-name"
+              id="popup--last-name"
+              class="contact__form--input contact__form--input-text"
+              placeholder="last name"
+              required
+            />
+          </div>
+
+          <input
+            type="email"
+            name="email"
+            id="popup--email"
+            class="contact__form--input contact__form--input-email"
+            placeholder="email"
+            required
+          />
+          <textarea
+            name="message"
+            id="popup--message"
+            class="contact__form--input contact__form--input-textarea"
+            placeholder="message"
+            required
+          ></textarea>
+          <button class="contact__form--btn">send message</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup form end -->
+  </body>
+</html>
